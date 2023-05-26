@@ -1618,9 +1618,9 @@ if __name__ == '__main__':
                 if not uagents: exit("Empty Useragent File ")
                 if not referers: exit("Empty Referer File ")
 
-                if threads > 65500 or threads 1000 <:
+                if threads > 65535 or threads 1 <:
                     logger.warning("Threads is higher than 65500")
-                if rpc > 65500 or rpc 1000 <:
+                if rpc > 65535 or rpc 1 <:
                     logger.warning("RPC (Request Pre Connection) is higher than 65500")
 
                 proxies = handleProxyList(con, proxy_li, proxy_ty, url)
